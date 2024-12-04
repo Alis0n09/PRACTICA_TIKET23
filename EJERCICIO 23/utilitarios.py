@@ -13,9 +13,17 @@ def calcularValorHora(val1):
     resultado= val1/160
     return resultado
 
-def calcularTipoMulta(tipoMulta):
-    
-    return
+def consultarMulta(tipoMulta):
+    if tipoMulta == 1:
+        return 10/100*100
+    elif tipoMulta ==2:
+        return 15/100*100
+    elif tipoMulta == 3:
+        return 20/100*100
+    elif tipoMulta == 4:
+        return 30/100*100
+    else:
+        return -1
 
 def calcularValorDescuento(precio,porcentajedescuento):
     valorDescuento = precio*porcentajedescuento
